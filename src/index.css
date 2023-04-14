@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.data {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.data2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.icons {
+    overflow: auto;
+}
+
+.img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1) rotate(7deg);
+    transition: .3s;
+}
+
+
+@media screen and (max-width:770px) {
+    .icons {
+        overflow-x: auto;
+        display: flex;
+        position: absolute
+    }
+
+
+}
